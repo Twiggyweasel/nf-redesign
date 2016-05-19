@@ -1,0 +1,94 @@
+body {
+    padding-bottom:40px;
+}
+
+.header {
+    height:120px;
+    border-bottom-style:solid;
+    border-bottom-color:#98002E;
+}
+
+.navbar-blue {
+    background-color: #015F88;
+    border-radius:0px;
+}
+
+.collapse {
+    color:#98002E;
+}
+
+.navbar-nav.nav-justified > li{
+    float:none;
+}
+
+.btn {
+    /*border-radius:0px;*/
+}
+
+#collapse li a {
+    color:white;
+}
+
+#collapse li a:hover {
+    background-color:#98002E;
+}
+
+.nav .nav-item .nav-link {
+  color: white;
+}
+.white {
+    color:black;
+    background-color:white;
+}
+.icon-bar {
+    color:gray;
+    background-color:gray;
+}
+
+.img-border {
+    margin-top: 2px;
+    margin-right: 2%;
+    padding: 5px;
+    border: 1px solid #EEE;
+    line-height: 1em;
+}
+.panel-body {
+    color:black;
+}
+.blue {
+    color:#015F88;
+}
+/* carousel CSS*/
+
+#myCarousel .nav a small
+{
+    display: block;
+}
+#myCarousel .nav
+{
+    background: #eee;
+}
+
+.carousel {
+    padding-bottom:25px;
+}
+.nav-justified > li > a
+{
+    border-radius: 0px;
+}
+.nav-pills>li[data-slide-to="0"].active a { background-color: #16a085; }
+.nav-pills>li[data-slide-to="1"].active a { background-color: #e67e22; }
+.nav-pills>li[data-slide-to="2"].active a { background-color: #2980b9; }
+.nav-pills>li[data-slide-to="3"].active a { background-color: #8e44ad; }
+
+.slick-prev, .slick-next {
+  color:black;
+}
+
+.card {
+      box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);
+}
+
+.navbar {
+  border-radius: 0px;
+}
