@@ -34,7 +34,7 @@
                 <li class="nav-item"><a href='#events' class="nav-link">Events</a></li>
                 <li class="nav-item"><a href='#events' class="nav-link">Fundraising</a></li>
                 <li class="nav-item"><a href='/donate.html' class='btn btn-success hidden-xs'>Donate Now</a></li>
-                
+
             </ul>
             <!--/.navbar-nav -->
         </div>
@@ -72,6 +72,20 @@
     <script src="us-map-1.0.1/lib/raphael.js"></script>
     <script src="us-map-1.0.1/jquery.usmap.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#map').usmap({
+          stateStyles: {fill: '#4ECDC4'},
+          stateHoverStyles: {fill: 'red'},
+          showLabels: true,
+          click: function(event, data) {
+            $('#clicked-state')
+              .text('You clicked: '+data.name);
+              // .parent().effect('highlight', {color: '#C7F464'}, 2000);
+          }
+        });
+      });
+    </script>
     <script src="js/custom.js"></script>
 </body>
 </html>
