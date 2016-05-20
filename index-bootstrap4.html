@@ -3,7 +3,10 @@
 
 <head>
     <title>NF Network Test Build</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
@@ -14,38 +17,135 @@
 
 <body>
     <header class='header'>
-        <div class='container m-t-1'>
+        <div class='container m-t-1 hidden-sm-down'>
             <a class='navbar-brand' href='index.html'><img src='img/logo.jpg'></a>
             <div class='pull-xs-right hidden-xs p-t-2'>
                 <em>Leading NF Advocacy
-          <br>
-          Building NF Community</em>
+                <br>
+                Building NF Community</em>
             </div>
+        </div>
+        <div class='container m-t-1 hidden-md-up'>
+            <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" class="center-block" /></a>
         </div>
     </header>
 
     <nav class='navbar navbar-dark bg-primary'>
         <div class='container'>
-            <ul class='nav navbar-nav pull-xs-right'>
-                <li class="nav-item"><a href='#' class="nav-link">Who We Are</a></li>
-                <li class="nav-item"><a href='/understanding-nf.html' class="nav-link">Understand NF</a></li>
-                <li class="nav-item"><a href='#activist' class="nav-link">Activists</a></li>
-                <li class="nav-item"><a href='#community' class="nav-link">Communities</a></li>
-                <li class="nav-item"><a href='#events' class="nav-link">Events</a></li>
-                <li class="nav-item dropdown"><a href='#events' class="nav-link" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fundraising</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <h6 class="dropdown-header">Test Header</h6>
+            <div class="collapse" id="mainCollapsingNavbar">
+                <div class="bg-inverse p-a-1">
+                    <ul class="mobile-nav">
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">Understand NF</a></li>
+                        <li><a href="#">Activists</a></li>
+                        <li><a href="#">Communities</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Fundraising</a></li>
+                    </ul>
+                    <!-- /.mobile-nav -->
+                </div>
+                <!-- /.bg-inverse -->
+            </div>
+            <!-- /.collapse mobile-nav -->
+            <button type='button' class='navbar-toggler hidden-md-up' data-toggle='collapse' data-target="#mainCollapsingNavbar" aria-expanded='false'>
+                &#9776;
+            </button>
+            <!-- /.mobile-nav Button -->
+            <ul class='nav navbar-nav pull-xs-right hidden-sm-down'>
+                <li class="nav-item dropdown"><a href='#' class="nav-link" id="dropdownMenuWho" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Who We Are</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuWho">
+                        <h6 class="dropdown-header">Test Header</h6>
                         <a class="dropdown-item" href="#">Test</a>
                         <a class="dropdown-item" href="#">Another Test</a>
                         <a class="dropdown-item" href="#">Something else here</a>
                         <div class="dropdown-divider"></div>
                         <h6 class="dropdown-header">Test Header 2</h6>
-                          <a class="dropdown-item" href="#">Test</a>
-                          <a class="dropdown-item" href="#">Another Test</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
                     </div>
+                    <!-- /#dropdownMenuWho -->
                 </li>
-                <li class="nav-item"><a href='/donate.html' class='btn btn-success hidden-xs'>Donate Now</a></li>
+                <!-- /.nav-item -->
+                <li class="nav-item dropdown"><a href='/understanding-nf.html' class="nav-link" id="dropdownMenuUnderstand" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Understand NF</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuUnderstand">
+                        <h6 class="dropdown-header">Test Header</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Test Header 2</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    <!-- /#dropdownMenuUnderstand -->
+                </li>
+                <!-- /.nav-item -->
+                <li class="nav-item dropdown"><a href='#activist' class="nav-link" id="dropdownMenuActivist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Activists</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuActivist">
+                        <h6 class="dropdown-header">Test Header</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Test Header 2</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    <!-- /#dropdownMenuActivist -->
+                </li>
+                <!-- /.nav-item -->
+                <li class="nav-item dropdown"><a href='#community' class="nav-link" id="dropdownMenuCommunity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Communities</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuCommunity">
+                        <h6 class="dropdown-header">Test Header</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Test Header 2</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    <!-- /#dropdownMenuCommunity -->
+                </li>
+                <!-- /.nav-item -->
+                <li class="nav-item dropdown"><a href='#events' class="nav-link" id="dropdownMenuEvents" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuEvents">
+                        <h6 class="dropdown-header">Test Header</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Test Header 2</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    <!-- /#dropdownMenuEvents -->
+                </li>
+                <!-- /.nav-item -->
+                <li class="nav-item dropdown"><a href='#fundraising' class="nav-link" id="dropdownMenuFunds" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fundraising</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuFunds">
+                        <h6 class="dropdown-header">Test Header</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Test Header 2</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    <!-- /#dropdownMenuFunds -->
+                </li>
+                <!-- /.nav-item -->
+                <li class="nav-item">
+                    <a href='/donate.html' class='btn btn-success hidden-xs'>Donate Now</a>
+                </li>
+                <!-- /.nav-item -->
             </ul>
             <!--/.navbar-nav -->
         </div>
@@ -53,12 +153,12 @@
     </nav>
     <!--/.navbar -->
 
-    <div class="container p-t-1">
+    <div class="container m-t-2">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 p-x-3 hidden-sm-down">
                 <div class="main-carousel">
                     <div>
-                        <img src="https://placehold.it/760x400/16a085" class="img-fluid"/>
+                        <img src="https://placehold.it/760x400/16a085" class="img-fluid" />
                     </div>
                     <div>
                         <img src="http://placehold.it/760x400/e67e22/ffffff" class="img-fluid">
@@ -67,18 +167,21 @@
                         <img src="http://placehold.it/760x400/2980b9/ffffff" class="img-fluid">
                     </div>
                 </div>
-                <!-- /.jumbotron -->
+                <!-- /.main-carousel -->
             </div>
             <!-- /.col -->
 
             <div class='col-md-4'>
                 <div class='card card-block'>
                     <div class='card-text'>
-                        <h3 class='text-xs-center m-t-1'>NF Helpcenter</h3>
-                        <button class='btn btn-primary btn-block m-y-2'><span class='glyphicon glyphicon-plus'></span><i class="fa fa-medkit" aria-hidden="true"></i> Find a Doctor</button>
-                        <button class='btn btn-primary btn-block m-y-2'><span class='glyphicon glyphicon-map-marker'></span><i class="fa fa-map-marker" aria-hidden="true"></i> Find a Local NF Group</button>
-                        <button class='btn btn-primary btn-block m-y-2'><span class='glyphicon glyphicon-user'></span><i class="fa fa-users" aria-hidden="true"></i> Become an Advocate</button>
-                        <button class='btn btn-primary btn-block m-y-2'><span class='glyphicon glyphicon-comment'></span><i class="fa fa-comments" aria-hidden="true"></i> Chat with Others</button>
+                        <div class="container">
+                            <h3 class='text-xs-center m-t-1'>NF Helpcenter</h3>
+                            <button class='btn btn-primary btn-block m-y-2'><span class='glyphicon glyphicon-plus'></span><i class="fa fa-medkit" aria-hidden="true"></i> Find a Doctor</button>
+                            <button class='btn btn-primary btn-block m-y-2'><span class='glyphicon glyphicon-map-marker'></span><i class="fa fa-map-marker" aria-hidden="true"></i> Find a Local NF Group</button>
+                            <button class='btn btn-primary btn-block m-y-2'><span class='glyphicon glyphicon-user'></span><i class="fa fa-users" aria-hidden="true"></i> Become an Advocate</button>
+                            <button class='btn btn-primary btn-block m-y-2'><span class='glyphicon glyphicon-comment'></span><i class="fa fa-comments" aria-hidden="true"></i> Chat with Others</button>
+                            <button class="btn btn-success btn-block m-y-2 hidden-md-up">Make A Donation</button>
+                        </div>
                     </div>
                     <!-- /.card-text -->
                 </div>
@@ -88,80 +191,159 @@
             <!-- /.col -->
         </div>
         <!-- /.row -->
-        <div class="row m-t-1">
-            <div class="col-sm-8">
-                <div class="col-sm-6 m-y-1">
-                    <h2>Test</h2>
-                    <img src='https://placehold.it/142x98' class='img-border'>
-                       <p class="m-t-1">
-                           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                       </p>
-                    <button class='btn btn-info'>
-                        More Info
-                    </button>
+        <div class="row m-t-2">
+            <div class="col-md-8">
+                <div class="container">
+                    <div class="col-sm-6 m-y-1">
+                        <h2>Test</h2>
+                        <img src='https://placehold.it/142x98' class='img-border'>
+                        <p class="m-t-1">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                        </p>
+                        <button class='btn btn-info'>
+                            More Info
+                        </button>
+                    </div>
+                    <!-- /.col inner -->
+                    <div class="col-sm-6 m-y-1">
+                        <h2>Test</h2>
+                        <img src='https://placehold.it/142x98' class='img-border'>
+                        <p class="m-t-1">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                        </p>
+                        <button class='btn btn-info'>
+                            More Info
+                        </button>
+                    </div>
+                    <!-- /.col inner -->
+                    <div class="col-sm-6 m-y-1">
+                        <h2>Test</h2>
+                        <img src='https://placehold.it/142x98' class='img-border'>
+                        <p class="m-t-1">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                        </p>
+                        <button class='btn btn-info'>
+                            More Info
+                        </button>
+                    </div>
+                    <!-- /.col inner -->
+                    <div class="col-sm-6 m-y-1">
+                        <h2>Test</h2>
+                        <img src='https://placehold.it/142x98' class='img-border'>
+                        <p class="m-t-1">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                        </p>
+                        <button class='btn btn-info'>
+                            More Info
+                        </button>
+                    </div>
+                    <!-- /.col inner -->
                 </div>
-                <div class="col-sm-6 m-y-1">
-                    <h2>Test</h2>
-                    <img src='https://placehold.it/142x98' class='img-border'>
-                       <p class="m-t-1">
-                           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                       </p>
-                    <button class='btn btn-info'>
-                        More Info
-                    </button>
+                <!-- /.container -->
+            </div>
+            <!-- /.col 1 -->
+            <div class="col-md-4 m-y-1">
+                <div class='card card-block'>
+                    <div class='card-text'>
+                        <div class='container'>
+                            <div class="row">
+                                <img src='img/greatsteps-small.jpg' class='img-fluid center-block'>
+                            </div>
+                            <br>
+                            <div class='row'>
+                                <button class='btn btn-primary btn-block'>
+                                    Find a walk
+                                </button>
+                            </div>
+                            <br>
+                            <div class='row'>
+                                <button class='btn btn-info btn-block'>
+                                    Learn More
+                                </button>
+                            </div>
+                            <br>
+                            <div class='row'>
+                                <button class='btn btn-warning btn-block'>
+                                    Setup a Walk
+                                </button>
+                            </div>
+                        </div>
+                        <!-- /.container -->
+                    </div>
+                    <!-- /.card-text -->
                 </div>
-
+                <!-- /.card great steps -->
             </div>
-            <div class="col-sm-4 m-y-1">
-              <div class='card card-block'>
-                  <div class='card-text'>
-                      <div class='container-fluid'>
-                          <div class="row">
-                              <img src='img/greatsteps-small.jpg' class='img-fluid center-block'>
-                          </div>
-                          <br>
-                          <div class='row'>
-                              <button class='btn btn-primary btn-block'>
-                                  Find a walk Near you
-                              </button>
-                          </div>
-                          <br>
-                          <div class='row'>
-                              <button class='btn btn-info btn-block'>
-                                  Learn about NF Walks
-                              </button>
-                          </div>
-                          <br>
-                          <div class='row'>
-                              <button class='btn btn-warning btn-block'>
-                                  Setup a NF Walk
-                              </button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-            </div>
+            <!-- /.col 2 -->
         </div>
         <!-- /.container -->
-      </div>
-        <nav class="navbar navbar-light bg-primary">
-          <div class="container">
-            <div class="col-md-3 col-md-offset-1">
-              <h3>Test</h3>
+    </div>
+    <!-- /.row -->
+    <nav class="nav navbar navbar-dark bg-faded m-t-2">
+        <div class="container m-t-2">
+            <div class="col-md-3">
+                <h4>About Us</h4>
+                <hr />
+                <h4>Our Impact</h4>
+                <hr />
+                <h4>Current Campaigns</h4>
             </div>
-            <div class="col-md-3 col-md-offset-1">
-              <h3>Test</h3>
+            <!-- /.col 1 -->
+            <div class="col-sm-6 col-md-2">
+                <ul class="footer-list">
+                    <li class="p-t-1"><a href="#">What is NF</a></li>
+                    <li class="p-t-1"><a href="#">Contact Us</a></li>
+                    <li class="p-t-1"><a href="#">NF Blog</a></li>
+                </ul>
             </div>
-            <div class="col-md-3 col-md-offset-1">
-              <h3>Test</h3>
+            <!-- /.col 2 -->
+            <div class="col-sm-6 col-md-2">
+                <ul class="footer-list">
+                    <li class="p-t-1"><a href="#">NF Partners</a></li>
+                    <li class="p-t-1"><a href="#">Get Involved</a></li>
+                    <li class="p-t-1"><a href="#">Advocacy</a></li>
+                </ul>
             </div>
-          </div>
-  <a class="navbar-brand" href="#">Fixed bottom</a>
-</nav>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="slick/slick.min.js"></script>
-        <script src="js/custom.js"></script>
+            <!-- /.col 3 -->
+            <div class="col-md-4 col-md-offset-1">
+                <div class="row">
+                    <h4>Stay iNFormed</h4>
+                    <div class="input-group">
+                        <!-- Stay iNFormed Signup -->
+                        <input type="email" class="form-control" placeholder="example@me.com" />
+                        <span class="input-group-btn">
+                          <button class="btn btn-info" type="button">Sign up</button>
+                        </span>
+                    </div>
+                    <!-- /.input-group -->
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <h4 class="m-t-1">Social</h4>
+                    <ul class="nav navbar-nav social-footer">
+                        <li class="nav-item"><a href="#" class="nav-item"><i class="fa fa-facebook-official "></i></a></li>
+                        <li><a href="#" class="nav-item"><i class="fa fa-twitter-square"></i></a></li>
+                        <li><a href="#" class="nav-item"><i class="fa fa-youtube-square"></i></a></li>
+                        <li><a href="#" class="nav-item"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <!-- /.row -->
+                <div class="row m-t-1">
+                    <p>
+                        Access <a href="#">helpful resources</a> or call: 1-800-942-6825
+                    </p>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.column 4 -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- /.footer-nav -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 
 </html>
