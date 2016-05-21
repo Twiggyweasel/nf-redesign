@@ -123,3 +123,9 @@
   text-decoration: none;
   color: white;
 }
+
+.top-scroll {
+  position: fixed;
+  right:15%;
+  bottom:30%;
+}
