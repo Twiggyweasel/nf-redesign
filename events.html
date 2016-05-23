@@ -1,0 +1,46 @@
+<html>
+    <head>
+        
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/fullcalendar.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="col-sm-10 col-sm-offset-1">
+        <div id="calendar"></div>
+        </div>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/moment.min.js"></script>
+        <script type="text/javascript" src="js/fullcalendar.js"></script>
+        <script type="text/javascript" src="js/gcal.js"></script>
+        <script type='text/javascript'>
+
+$(document).ready(function() {
+    $('#calendar').fullCalendar({
+        googleCalendarApiKey: 'AIzaSyAAWNxk_MLpnqt_hIw5MaglFR2jmw9vb3E',
+        events: {
+            googleCalendarId: 'jhf0cnjvjm61cd2mqcrotpjs58@group.calendar.google.com'
+        },
+        
+        eventClick: function(calEvent, jsEvent, view) {
+
+        alert('Event: ' + calEvent.title + "on: " + calEvent.start);
+        //alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
+        alert('View: ' + view.name);
+
+        // change the border color just for fun
+        $(this).css('border-color', 'red');
+        if (calEvent.url) {
+            //window.open(event.url);
+            return false;
+        }
+    }
+        
+    });
+});
+
+</script>
+</html>
