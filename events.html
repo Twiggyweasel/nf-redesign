@@ -1,46 +1,263 @@
 <html>
-    <head>
-        
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="css/fullcalendar.min.css">
-    </head>
-    <body>
-        <div class="container">
+
+<head>
+    <title>NF Network Test Build</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/fullcalendar.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/a3bac4fe74.css">
+    <link rel="stylesheet" type="text/css" href="css/custom2.css">
+</head>
+
+<body>
+    <header class='header'>
+        <div class='container m-t-1 hidden-sm-down'>
+            <a class='navbar-brand' href='index.html'><img src='img/logo.jpg' alt="nf-logo" /></a>
+            <div class='pull-xs-right hidden-xs p-t-2'>
+                <em>Leading NF Advocacy
+                <br>
+                Building NF Community</em>
+            </div>
+        </div>
+        <div class='container m-t-1 hidden-md-up'>
+            <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" class="center-block" alt="nf-logo" /></a>
+        </div>
+    </header>
+
+    <nav class='navbar navbar-dark bg-primary'>
+        <div class='container'>
+            <div class="collapse" id="mainCollapsingNavbar">
+                <div class="bg-inverse p-a-1">
+                    <ul class="mobile-nav">
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">Understand NF</a></li>
+                        <li><a href="#">Activists</a></li>
+                        <li><a href="#">Communities</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Fundraising</a></li>
+                    </ul>
+                    <!-- /.mobile-nav -->
+                </div>
+                <!-- /.bg-inverse -->
+            </div>
+            <!-- /.collapse mobile-nav -->
+            <button type='button' class='navbar-toggler hidden-md-up' data-toggle='collapse' data-target="#mainCollapsingNavbar" aria-expanded='false'>
+                &#9776;
+            </button>
+            <!-- /.mobile-nav Button -->
+            <ul class='nav navbar-nav pull-xs-right hidden-sm-down'>
+                <li class="nav-item dropdown"><a href='#' class="nav-link" id="dropdownMenuWho" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Who We Are</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuWho">
+                        <h6 class="dropdown-header">Test Header</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Test Header 2</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    <!-- /#dropdownMenuWho -->
+                </li>
+                <!-- /.nav-item -->
+                <li class="nav-item dropdown"><a href='/understanding-nf.html' class="nav-link" id="dropdownMenuUnderstand" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Understand NF</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuUnderstand">
+                        <h6 class="dropdown-header">Test Header</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Test Header 2</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    <!-- /#dropdownMenuUnderstand -->
+                </li>
+                <!-- /.nav-item -->
+                <li class="nav-item dropdown"><a href='#activist' class="nav-link" id="dropdownMenuActivist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Activists</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuActivist">
+                        <h6 class="dropdown-header">Test Header</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Test Header 2</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    <!-- /#dropdownMenuActivist -->
+                </li>
+                <!-- /.nav-item -->
+                <li class="nav-item dropdown"><a href='#community' class="nav-link" id="dropdownMenuCommunity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Communities</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuCommunity">
+                        <h6 class="dropdown-header">Test Header</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Test Header 2</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    <!-- /#dropdownMenuCommunity -->
+                </li>
+                <!-- /.nav-item -->
+                <li class="nav-item dropdown"><a href='#events' class="nav-link" id="dropdownMenuEvents" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuEvents">
+                        <h6 class="dropdown-header">Test Header</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Test Header 2</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    <!-- /#dropdownMenuEvents -->
+                </li>
+                <!-- /.nav-item -->
+                <li class="nav-item dropdown"><a href='#fundraising' class="nav-link" id="dropdownMenuFunds" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fundraising</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuFunds">
+                        <h6 class="dropdown-header">Test Header</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Test Header 2</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    <!-- /#dropdownMenuFunds -->
+                </li>
+                <!-- /.nav-item -->
+                <li class="nav-item dropdown">
+                    <a href='/donate.html' class='btn btn-success hidden-xs' id="dropdownMenuDonate" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Donate Now</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuDonate">
+                        <h6 class="dropdown-header">Test Header</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Test Header 2</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <!-- /.nav-item -->
+            </ul>
+            <!--/.navbar-nav -->
+        </div>
+        <!--/.container -->
+    </nav>
+    <!--/.navbar -->
+    <div class="container m-t-2">
+        <div class="row">
             <div class="col-sm-10 col-sm-offset-1">
-        <div id="calendar"></div>
+                <div id="calendar"></div>
+            </div>
         </div>
+    </div>
+    <nav class="nav navbar navbar-dark bg-faded m-t-2">
+        <div class="container m-t-2">
+            <div class="col-md-3">
+                <h4>About Us</h4>
+                <hr />
+                <h4>Our Impact</h4>
+                <hr />
+                <h4>Current Campaigns</h4>
+            </div>
+            <!-- /.col 1 -->
+            <div class="col-sm-6 col-md-2">
+                <ul class="footer-list">
+                    <li class="p-t-1"><a href="#">What is NF</a></li>
+                    <li class="p-t-1"><a href="#">Contact Us</a></li>
+                    <li class="p-t-1"><a href="#">NF Blog</a></li>
+                </ul>
+            </div>
+            <!-- /.col 2 -->
+            <div class="col-sm-6 col-md-2">
+                <ul class="footer-list">
+                    <li class="p-t-1"><a href="#">NF Partners</a></li>
+                    <li class="p-t-1"><a href="#">Get Involved</a></li>
+                    <li class="p-t-1"><a href="#">Advocacy</a></li>
+                </ul>
+            </div>
+            <!-- /.col 3 -->
+            <div class="col-md-4 col-md-offset-1">
+                <div class="row">
+                    <h4>Stay iNFormed</h4>
+                    <div class="input-group">
+                        <!-- Stay iNFormed Signup -->
+                        <input type="email" class="form-control" placeholder="example@me.com" />
+                        <span class="input-group-btn">
+                          <button class="btn btn-info" type="button">Sign up</button>
+                        </span>
+                    </div>
+                    <!-- /.input-group -->
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <h4 class="m-t-1">Social</h4>
+                    <ul class="nav navbar-nav social-footer">
+                        <li class="nav-item"><a href="#" class="nav-item"><i class="fa fa-facebook-official "></i></a></li>
+                        <li><a href="#" class="nav-item"><i class="fa fa-twitter-square"></i></a></li>
+                        <li><a href="#" class="nav-item"><i class="fa fa-youtube-square"></i></a></li>
+                        <li><a href="#" class="nav-item"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <!-- /.row -->
+                <div class="row m-t-1">
+                    <p>
+                        Access <a href="#">helpful resources</a> or call: 1-800-942-6825
+                    </p>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.column 4 -->
         </div>
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="js/moment.min.js"></script>
-        <script type="text/javascript" src="js/fullcalendar.js"></script>
-        <script type="text/javascript" src="js/gcal.js"></script>
-        <script type='text/javascript'>
+        <!-- /.container -->
+    </nav>
+    <!-- /.footer-nav -->
 
-$(document).ready(function() {
-    $('#calendar').fullCalendar({
-        googleCalendarApiKey: 'AIzaSyAAWNxk_MLpnqt_hIw5MaglFR2jmw9vb3E',
-        events: {
-            googleCalendarId: 'jhf0cnjvjm61cd2mqcrotpjs58@group.calendar.google.com'
-        },
-        
-        eventClick: function(calEvent, jsEvent, view) {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/fullcalendar.js"></script>
+    <script type="text/javascript" src="js/gcal.js"></script>
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $('#calendar').fullCalendar({
+                googleCalendarApiKey: 'AIzaSyAAWNxk_MLpnqt_hIw5MaglFR2jmw9vb3E',
+                events: {
+                    googleCalendarId: 'jhf0cnjvjm61cd2mqcrotpjs58@group.calendar.google.com'
+                },
 
-        alert('Event: ' + calEvent.title + "on: " + calEvent.start);
-        //alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
-        alert('View: ' + view.name);
+                eventClick: function(calEvent, jsEvent, view) {
 
-        // change the border color just for fun
-        $(this).css('border-color', 'red');
-        if (calEvent.url) {
-            //window.open(event.url);
-            return false;
-        }
-    }
-        
-    });
-});
+                    // alert('Event: ' + calEvent.title + "on: " + calEvent.start);
+                    //alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
+                    // alert('View: ' + view.name);
 
-</script>
+                    // change the border color just for fun
+                    $(this).css('border-color', 'red');
+                    if (calEvent.url) {
+                        //window.open(event.url);
+                        return false;
+                    }
+                }
+
+            });
+        });
+    </script>
+
 </html>
