@@ -8,9 +8,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/fullcalendar.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/a3bac4fe74.css">
-    <link rel="stylesheet" type="text/css" href="css/nfstyle.css">
+
+    <link rel="stylesheet" type="text/css" href="css/custom2.css">
 </head>
 
 <body>
@@ -141,18 +143,18 @@
                 </li>
                 <!-- /.nav-item -->
                 <li class="nav-item dropdown">
-                    <a href='/donate.html' class='btn btn-success hidden-xs' id="dropdownMenuDonate" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Donate Now</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuDonate">
-                        <h6 class="dropdown-header">Test Header</h6>
-                        <a class="dropdown-item" href="#">Test</a>
-                        <a class="dropdown-item" href="#">Another Test</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div>
-                        <h6 class="dropdown-header">Test Header 2</h6>
-                        <a class="dropdown-item" href="#">Test</a>
-                        <a class="dropdown-item" href="#">Another Test</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+                  <a href='/donate.html' class='btn btn-success hidden-xs' id="dropdownMenuDonate" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Donate Now</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuDonate">
+                      <h6 class="dropdown-header">Test Header</h6>
+                      <a class="dropdown-item" href="#">Test</a>
+                      <a class="dropdown-item" href="#">Another Test</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div class="dropdown-divider"></div>
+                      <h6 class="dropdown-header">Test Header 2</h6>
+                      <a class="dropdown-item" href="#">Test</a>
+                      <a class="dropdown-item" href="#">Another Test</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
                 </li>
                 <!-- /.nav-item -->
             </ul>
@@ -161,13 +163,151 @@
         <!--/.container -->
     </nav>
     <!--/.navbar -->
+
     <div class="container m-t-2">
         <div class="row">
-            <div class="col-sm-10 col-sm-offset-1">
-                <div id="calendar"></div>
+            <div class="col-md-12 col-lg-8 p-x-3 hidden-sm-down">
+                <div class="main-carousel">
+                    <div>
+                        <img src="https://placehold.it/760x400/16a085" class="img-fluid" alt="carousel-img-1" />
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/760x400/e67e22/ffffff" class="img-fluid" alt="carousel-img-2" />
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/760x400/2980b9/ffffff" class="img-fluid" alt="carousel-img-3" />
+                    </div>
+                </div>
+                <!-- /.main-carousel -->
             </div>
+            <!-- /.col -->
+
+            <div class='col-md-6 col-md-offset-3 col-lg-offset-0 col-lg-4'>
+                <div class='card card-block'>
+                    <div class='card-text'>
+                        <div class="container">
+                            <h3 class='text-xs-center m-t-1'>NF Help Center</h3>
+                            <button class='btn btn-primary btn-block m-y-2'><span class='glyphicon glyphicon-plus'></span><i class="fa fa-medkit" aria-hidden="true"></i> Find a Doctor</button>
+                            <button class='btn btn-primary btn-block m-y-2'><span class='glyphicon glyphicon-map-marker'></span><i class="fa fa-map-marker" aria-hidden="true"></i> Find a Local NF Group</button>
+                            <button class='btn btn-primary btn-block m-y-2'><span class='glyphicon glyphicon-user'></span><i class="fa fa-users" aria-hidden="true"></i> Become an Advocate</button>
+                            <button class='btn btn-primary btn-block m-y-2'><span class='glyphicon glyphicon-comment'></span><i class="fa fa-comments" aria-hidden="true"></i> Chat with Others</button>
+                            <button class="btn btn-success btn-block m-y-2 hidden-md-up">Make A Donation</button>
+                        </div>
+                    </div>
+                    <!-- /.card-text -->
+                </div>
+                <!-- /.card -->
+
+            </div>
+            <!-- /.col -->
         </div>
+        <!-- /.row -->
+        <div class="row m-t-2">
+            <div class="col-md-8">
+                <div class="container">
+                  <h3>News</h3>
+                  <hr />
+                    <div class="col-sm-6 m-b-3 m-t-1">
+                        <h2>Test</h2>
+                        <img src='https://placehold.it/142x98' class='img-border' alt="article-img-1" />
+                        <p class="m-t-1">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                        </p>
+                        <button class='btn btn-info'>
+                            More Info
+                        </button>
+                    </div>
+                    <!-- /.col inner -->
+                    <div class="col-sm-6 m-b-3 m-t-1">
+                        <h2>Test</h2>
+                        <img src='https://placehold.it/142x98' class='img-border' alt="article-img-2" />
+                        <p class="m-t-1">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                        </p>
+                        <button class='btn btn-info'>
+                            More Info
+                        </button>
+                    </div>
+                    <!-- /.col inner -->
+                    <div class="col-sm-6 m-b-3 m-t-1">
+                        <h2>Test</h2>
+                        <img src='https://placehold.it/142x98' class='img-border' alt="article-img-3" />
+                        <p class="m-t-1">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                        </p>
+                        <button class='btn btn-info'>
+                            More Info
+                        </button>
+                    </div>
+                    <!-- /.col inner -->
+                    <div class="col-sm-6 m-b-3 m-t-1">
+                        <h2>Test</h2>
+                        <img src='https://placehold.it/142x98' class='img-border' alt="article-img-4" />
+                        <p class="m-t-1">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                        </p>
+                        <button class='btn btn-info'>
+                            More Info
+                        </button>
+                    </div>
+                    <!-- /.col inner -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.col 1 -->
+            <div class="col-md-4">
+                <div class='card card-block m-b-3'>
+                    <div class='card-text'>
+                        <div class='container'>
+                            <div class="row">
+                                <img src='img/greatsteps-small.jpg' class='img-fluid center-block' alt="greatsteps-logo" />
+                            </div>
+                            <br>
+                            <div class='row'>
+                                <button class='btn btn-primary btn-block'>
+                                    Find a walk
+                                </button>
+                            </div>
+                            <br>
+                            <div class='row'>
+                                <button class='btn btn-info btn-block'>
+                                    Learn More
+                                </button>
+                            </div>
+                            <br>
+                            <div class='row'>
+                                <button class='btn btn-warning btn-block'>
+                                    Setup a Walk
+                                </button>
+                            </div>
+                        </div>
+                        <!-- /.container -->
+                    </div>
+                    <!-- /.card-text -->
+                </div>
+                <!-- /.card great steps -->
+                <div class-"m-t-3">
+
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNeurofibromatosis-Network-9766902412&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=1728031317474720" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                </div>
+            </div>
+            <!-- /.col 2 -->
+        </div>
+        <!-- /.container -->
     </div>
+    <!-- /.row -->
+    <div class="row">
+      <div class="container">
+        <div class="col-md-8">
+          <h3>Events</h3>
+          <hr />
+          <!-- <iframe height="500" src="https://doublethedonation.com/api/iframe/ZjA0OTZjN2EtNTQx" width="600"></iframe> -->
+        </div>
+        <div class="col-md-4">
+        </div>
+      </div>
+    </div>
+    
     <nav class="nav navbar navbar-dark bg-faded m-t-2">
         <div class="container m-t-2">
             <div class="col-md-3">
@@ -229,36 +369,22 @@
         <!-- /.container -->
     </nav>
     <!-- /.footer-nav -->
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/moment.min.js"></script>
-    <script type="text/javascript" src="js/fullcalendar.js"></script>
-    <script type="text/javascript" src="js/gcal.js"></script>
-    <script type='text/javascript'>
-        $(document).ready(function() {
-            $('#calendar').fullCalendar({
-                googleCalendarApiKey: 'AIzaSyAAWNxk_MLpnqt_hIw5MaglFR2jmw9vb3E',
-                events: {
-                    googleCalendarId: 'jhf0cnjvjm61cd2mqcrotpjs58@group.calendar.google.com'
-                },
-
-                eventClick: function(calEvent, jsEvent, view) {
-
-                    // alert('Event: ' + calEvent.title + "on: " + calEvent.start);
-                    //alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
-                    // alert('View: ' + view.name);
-
-                    // change the border color just for fun
-                    $(this).css('border-color', 'red');
-                    if (calEvent.url) {
-                        //window.open(event.url);
-                        return false;
-                    }
-                }
-
-            });
-        });
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.main-carousel').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: true,
+        dots: true
+      });
+    });
     </script>
+    <script src="js/custom.js"></script>
+</body>
 
 </html>

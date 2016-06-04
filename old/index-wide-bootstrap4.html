@@ -12,13 +12,13 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/a3bac4fe74.css">
 
-    <link rel="stylesheet" type="text/css" href="css/custom2.css">
+    <link rel="stylesheet" type="text/css" href="css/nfstyle.css">
 </head>
 
 <body>
     <header class='header'>
         <div class='container m-t-1 hidden-sm-down'>
-            <a class='navbar-brand' href='index.html'><img src='img/logo.jpg' alt="nf-logo" /></a>
+            <a class='navbar-brand' href='index.html'><img src='img/logo.jpg' alt="nf-logo" class="img-fluid" /></a>
             <div class='pull-xs-right hidden-xs p-t-2'>
                 <em>Leading NF Advocacy
                 <br>
@@ -26,12 +26,12 @@
             </div>
         </div>
         <div class='container m-t-1 hidden-md-up'>
-            <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" class="center-block" alt="nf-logo" /></a>
+            <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" class="center-block img-fluid" alt="nf-logo" /></a>
         </div>
     </header>
 
     <nav class='navbar navbar-dark bg-primary'>
-        <div class='container'>
+        <div class='container-fluid'>
             <div class="collapse" id="mainCollapsingNavbar">
                 <div class="bg-inverse p-a-1">
                     <ul class="mobile-nav">
@@ -143,18 +143,18 @@
                 </li>
                 <!-- /.nav-item -->
                 <li class="nav-item dropdown">
-                  <a href='/donate.html' class='btn btn-success hidden-xs' id="dropdownMenuDonate" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Donate Now</a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuDonate">
-                      <h6 class="dropdown-header">Test Header</h6>
-                      <a class="dropdown-item" href="#">Test</a>
-                      <a class="dropdown-item" href="#">Another Test</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div>
-                      <h6 class="dropdown-header">Test Header 2</h6>
-                      <a class="dropdown-item" href="#">Test</a>
-                      <a class="dropdown-item" href="#">Another Test</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
+                    <a href='/donate.html' class='btn btn-success hidden-xs' id="dropdownMenuDonate" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contribute Now</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuDonate">
+                        <h6 class="dropdown-header">Test Header</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Test Header 2</h6>
+                        <a class="dropdown-item" href="#">Test</a>
+                        <a class="dropdown-item" href="#">Another Test</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
                 </li>
                 <!-- /.nav-item -->
             </ul>
@@ -164,29 +164,43 @@
     </nav>
     <!--/.navbar -->
 
-    <div class="container m-t-2">
+    <div class="container-fluid">
+        <div class='col-xs-12 hidden-md-up'>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">Contribute</button>
+                <button type="button" class="btn btn-secondary">Stay iNFormed</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid m-t-2">
         <div class="row">
-            <div class="col-md-12 col-lg-8 p-x-3 hidden-sm-down">
+            <div class="col-md-12 col-lg-7 col-lg-offset-1 p-x-3 hidden-sm-down m-l-1">
                 <div class="main-carousel">
                     <div>
-                        <img src="https://placehold.it/760x400/16a085" class="img-fluid" alt="carousel-img-1" />
+                        <img src="https://placehold.it/1050x500/16a085" class="img-fluid" alt="carousel-img-1" />
                     </div>
                     <div>
-                        <img src="http://placehold.it/760x400/e67e22/ffffff" class="img-fluid" alt="carousel-img-2" />
+                        <img src="http://placehold.it/1050x500/e67e22/ffffff" class="img-fluid" alt="carousel-img-2" />
                     </div>
                     <div>
-                        <img src="http://placehold.it/760x400/2980b9/ffffff" class="img-fluid" alt="carousel-img-3" />
+                        <img src="http://placehold.it/1050x500/2980b9/ffffff" class="img-fluid" alt="carousel-img-3" />
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/1050x500/eeeeee/ffffff" class="img-fluid" alt="carousel-img-3" />
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/1050x500/e67e22/ffffff" class="img-fluid" alt="carousel-img-3" />
                     </div>
                 </div>
                 <!-- /.main-carousel -->
             </div>
             <!-- /.col -->
 
-            <div class='col-md-6 col-md-offset-3 col-lg-offset-0 col-lg-4'>
+            <div class='col-md-6 col-md-offset-3 col-lg-offset-1 col-lg-2'>
                 <div class='card card-block'>
                     <div class='card-text'>
                         <div class="container">
-                            <h3 class='text-xs-center m-t-1'>NF Helpcenter</h3>
+                            <h3 class='text-xs-center m-t-1'>NF Help Center</h3>
                             <button class='btn btn-primary btn-block m-y-2'><span class='glyphicon glyphicon-plus'></span><i class="fa fa-medkit" aria-hidden="true"></i> Find a Doctor</button>
                             <button class='btn btn-primary btn-block m-y-2'><span class='glyphicon glyphicon-map-marker'></span><i class="fa fa-map-marker" aria-hidden="true"></i> Find a Local NF Group</button>
                             <button class='btn btn-primary btn-block m-y-2'><span class='glyphicon glyphicon-user'></span><i class="fa fa-users" aria-hidden="true"></i> Become an Advocate</button>
@@ -205,9 +219,9 @@
         <div class="row m-t-2">
             <div class="col-md-8">
                 <div class="container">
-                  <h3>News</h3>
-                  <hr />
-                    <div class="col-sm-6 m-b-3 m-t-1">
+                    <h3>News</h3>
+                    <hr />
+                    <div class="col-sm-4 m-b-3 m-t-1">
                         <h2>Test</h2>
                         <img src='https://placehold.it/142x98' class='img-border' alt="article-img-1" />
                         <p class="m-t-1">
@@ -218,7 +232,7 @@
                         </button>
                     </div>
                     <!-- /.col inner -->
-                    <div class="col-sm-6 m-b-3 m-t-1">
+                    <div class="col-sm-4 m-b-3 m-t-1">
                         <h2>Test</h2>
                         <img src='https://placehold.it/142x98' class='img-border' alt="article-img-2" />
                         <p class="m-t-1">
@@ -229,7 +243,7 @@
                         </button>
                     </div>
                     <!-- /.col inner -->
-                    <div class="col-sm-6 m-b-3 m-t-1">
+                    <div class="col-sm-4 m-b-3 m-t-1">
                         <h2>Test</h2>
                         <img src='https://placehold.it/142x98' class='img-border' alt="article-img-3" />
                         <p class="m-t-1">
@@ -240,22 +254,24 @@
                         </button>
                     </div>
                     <!-- /.col inner -->
-                    <div class="col-sm-6 m-b-3 m-t-1">
-                        <h2>Test</h2>
-                        <img src='https://placehold.it/142x98' class='img-border' alt="article-img-4" />
-                        <p class="m-t-1">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                        </p>
-                        <button class='btn btn-info'>
-                            More Info
-                        </button>
+                    <div class="col-sm-4 m-b-3 m-t-1">
+                        <img src='https://placehold.it/400x250' class='img-border img-fluid' alt="article-img-4" />
+
+                    </div>
+                    <div class="col-sm-4 m-b-3 m-t-1">
+                        <img src='https://placehold.it/400x250' class='img-border img-fluid' alt="article-img-4" />
+
+                    </div>
+                    <div class="col-sm-4 m-b-3 m-t-1">
+                        <img src='https://placehold.it/400x250' class='img-border img-fluid' alt="article-img-4" />
+
                     </div>
                     <!-- /.col inner -->
                 </div>
                 <!-- /.container -->
             </div>
             <!-- /.col 1 -->
-            <div class="col-md-4">
+            <div class="col-md-2">
                 <div class='card card-block m-b-3'>
                     <div class='card-text'>
                         <div class='container'>
@@ -286,9 +302,10 @@
                     <!-- /.card-text -->
                 </div>
                 <!-- /.card great steps -->
-                <div class-"m-t-3">
+                <div class- "m-t-3">
 
-                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNeurofibromatosis-Network-9766902412&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=1728031317474720" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNeurofibromatosis-Network-9766902412&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=1728031317474720"
+                    width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
                 </div>
             </div>
             <!-- /.col 2 -->
@@ -296,18 +313,18 @@
         <!-- /.container -->
     </div>
     <!-- /.row -->
-    <div class="row">
-      <div class="container">
-        <div class="col-md-8">
-          <h3>Events</h3>
-          <hr />
-          <!-- <iframe height="500" src="https://doublethedonation.com/api/iframe/ZjA0OTZjN2EtNTQx" width="600"></iframe> -->
-        </div>
-        <div class="col-md-4">
-        </div>
-      </div>
-    </div>
-    
+    <!--<div class="row">-->
+    <!--    <div class="container">-->
+    <!--        <div class="col-md-8">-->
+    <!--            <h3>Events</h3>-->
+    <!--            <hr />-->
+                <!-- <iframe height="500" src="https://doublethedonation.com/api/iframe/ZjA0OTZjN2EtNTQx" width="600"></iframe> -->
+    <!--        </div>-->
+    <!--        <div class="col-md-4">-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+
     <nav class="nav navbar navbar-dark bg-faded m-t-2">
         <div class="container m-t-2">
             <div class="col-md-3">
@@ -373,16 +390,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript">
-    $(document).ready(function(){
-      $('.main-carousel').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        arrows: true,
-        dots: true
-      });
-    });
+        $(document).ready(function() {
+            $('.main-carousel').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                arrows: true,
+                dots: true
+            });
+        });
     </script>
     <script src="js/custom.js"></script>
 </body>

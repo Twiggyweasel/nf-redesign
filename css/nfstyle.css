@@ -1,0 +1,103 @@
+/*NF Red: #98002e*/
+/*NF Blue: #015f88*/
+
+body {
+  background-color: #FCFCFC;
+}
+
+.header {
+    height:120px;
+    border-bottom: #98002E solid; 
+}
+
+.navbar-blue {
+    background-color: #015F88;
+    border-radius:0px;
+}
+
+
+.navbar-blue .nav-item .nav-link {
+  color: white;
+}
+
+
+.img-border {
+    margin-top: 2px;
+    margin-right: 2%;
+    padding: 5px;
+    border: 1px solid #eee;
+    line-height: 1em;
+}
+
+
+.slick-prev:before, .slick-next:before{
+    color:#136188;
+}
+
+.card {
+      box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);
+}
+
+.social-footer li a {
+  color: #015f88;
+  padding-left:10px;
+  padding-right:10px;
+  font-size:36px;
+  border-bottom: solid 3px #F7F7F9;
+  transition: color .50s;
+  -webkit-transition: color .50s;
+}
+
+.social-footer li a:hover {
+  color: #98002e;
+  border-bottom: solid 3px #98002e;
+}
+
+.footer-list {
+  list-style: none;
+  padding:0;
+
+}
+.footer-list li a {
+  color: black;
+  text-decoration: none;
+}
+
+.mobile-nav {
+  list-style: none;
+  padding-left:0;
+}
+
+.mobile-nav li {
+    padding:5px 0;
+}
+.mobile-nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+.top-scroll {
+  position: fixed;
+  right:15%;
+  bottom:30%;
+}
+
+.underline {
+  border-bottom: #98002e solid;
+}
+
+.state-hide {
+  display: none;
+}
+
+
+.nf-content {
+  min-height: 700px;
+}
+
+.nf-content h2 {
+  color: #015f88;
+}
+.nf-content .tab-pane hr {
+  border-top-color: #98002e;
+}
