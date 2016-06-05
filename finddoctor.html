@@ -4,8 +4,9 @@
 <head>
     <title>NF Network Test Build</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/a3bac4fe74.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/nfstyle.css">
 </head>
 
@@ -138,7 +139,7 @@
         <div class="col-xs-10 col-xs-offset-1">
             <label>Select a State</label>
             <select class="form-control" id="state-select">
-                
+
                 <option value="AK">Alaska</option>
                 <option value="TX">Texas</option>
             </select>
@@ -290,8 +291,10 @@
     <!-- Start Copyright -->
     <nav class="navbar bg-inverse text-xs-center" style="border-radius:0px;">&copy; 2016 Neurofibromatosis Network</nav>
     <!-- End Copyright -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap4.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script> -->
     <script src="us-map-1.0.1/lib/raphael.js"></script>
     <script src="us-map-1.0.1/jquery.usmap.js"></script>
     <script>
@@ -307,11 +310,11 @@
                 },
                 showLabels: true,
                 click: function(event, data) {
-                    
+
                     if ($('#' + data.name).length) {
                         console.log(data.name);
                         isClicked = true;
-                        
+
                         $('#' + previousState).appendTo(".state-content").hide();
                         $('#' + data.name).prependTo('.state-content').removeClass('state-hide').hide().fadeIn('slow');
 
@@ -326,29 +329,29 @@
                         $('#' + previousState).hide();
                         $('#no-doc-title').text(data.name);
                         $('#no-doc').prependTo('.state-content').removeClass('state-hide').hide().fadeIn('slow');
-                        
+
                         previousState = "no-doc";
                     }
                 },
                 mouseover: function(event, data) {
-                    
+
                     if (!isClicked) {
-                        
+
                         if(data.name == previousState || previousState == "no-doc" && $('#' + data.name).length == 0){
-                                
+
                                 $('#no-doc-title').text(data.name);
                         }
                         else {
-                        
+
                             $('#' + previousState).hide();
-                        
+
                             if ($('#' + data.name).length) {
-        
+
                                 $('#' + data.name).prependTo('.state-content').removeClass('state-hide').hide().fadeIn('slow');
                                 previousState = data.name;
                             }
                             else {
-                        
+
                                 $('#no-doc-title').text(data.name);
                                 $('#no-doc').prependTo('.state-content').removeClass('state-hide').hide().fadeIn('slow');
                                 previousState = "no-doc";
@@ -357,16 +360,16 @@
                     }
                 }
             });
-            
+
             $('#state-select').change(function(){
                 var selected = "";
                 console.log($("#state-select option:selected").attr('value'));
                 selected = $("#state-select option:selected").attr('value');
                 $('#' + previousState).hide();
                 $("#" + selected).prependTo('.state-content').removeClass('state-hide').hide().fadeIn('fast');
-                
+
                 previousState = selected;
-                
+
             });
         });
     </script>
