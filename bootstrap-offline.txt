@@ -1,0 +1,2 @@
+cd documents/bootstrap_alpha.2
+bundle exec jekyll serve
